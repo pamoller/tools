@@ -1,0 +1,13 @@
+{
+    "format": "A4",
+    "margin": {
+        "top": "50px",
+        "right": "0px",
+        "bottom": "60px",
+        "left": "0px"
+    },
+    "printBackground": true,
+    "displayHeaderFooter": true,
+    "headerTemplate": "<span></span>",
+    "footerTemplate": "<div style=\"width: 100%; font-size: 14px; padding: 5px 5px 0; color: #000; position: relative;\"><div style=\"text-align:center\">Seite <span class=\"pageNumber\"></span></div></div>"
+}

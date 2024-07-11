@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+  margin: 2.5cm;
+}
+body * {
+  page-break-inside: avoid;
+}
+@page: first{
+  margin-top: 0;
+};
+h1 {
+  margin: 0;
+  page-break-before: always;
+}
+h2,
+h3,
+h4 {
+  page-break-after: avoid;
+}
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+p,
+table,
+pre {
+  margin: 1rem 0;
+}
+hr {
+  page-break-before: always;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+blockquote {
+  font-size: 0.9em;
+  border-left: 15px solid #ccc !important;
+  margin: 0.4em 10px;
+  margin-left: 0;
+  padding: 0.2em 10px;
+  background-color: #f9f9f9;
+}
+@page {
+  counter-increment: page;
+  counter-reset: page 1;
+  @bottom-center {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+}
